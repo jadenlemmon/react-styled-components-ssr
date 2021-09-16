@@ -1,0 +1,42 @@
+{
+  "name": "react_ssr_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:client": "NODE_ENV=development webpack --config webpack.client.config.js --mode=development",
+    "build:server": "NODE_ENV=development webpack --config webpack.server.config.js --mode=development"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actovos-consulting-group/ui-core": "^1.12.4-beta.2",
+    "express": "^4.17.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.3.0",
+    "styled-components": "^5.3.1",
+    "styled-normalize": "^8.0.7",
+    "styled-system": "^5.1.5"
+  },
+  "devDependencies": {
+    "@actovos-consulting-group/prettier-config": "^1.0.2",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "prettier": "^2.4.1",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-env"
+    ]
+  }
+}
